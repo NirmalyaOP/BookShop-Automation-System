@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookShop Automation System</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>BookShop</span> Automation System</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h1>User Panel</h1>
+
+        <img src="logo.png" alt="logo pic" width="100%" />
+
+        <ul>
+          <li><i class="fa fa-road"></i> Gothapatna, Malipada</li>
+          <li><i class="fa fa-phone"></i> (0674) - 7510023</li>
+          <li><i class="fa fa-envelope"></i> book@shop.com </li>
+        </ul>
+
+        <p class="full">
+            <a href="index.html"><button type="button"><h4> Click Here To Go Back To Home Page </h4></button></a>
+        </p>
+
+        <p class="full">
+            <a href="user.html"><button type="button"><h4>Click Here To Go Back To User Panel</h4></button></a>
+        </p>
+
+      </div>
+      <div class="contact">
+        <h1 style="color:seagreen; text-align: center;">Search Book By Using Author</h1>
+        <div class="alert">The Book has been added</div>
+        <form id="contactForm">
+
+          <p class="full">
+            <a href="request.html"><button type="button">Click Here To Request For A Book</button></a>
+         </p>
+
+          <p class="full">
+            <label>Author Name</label>
+            <input type="text" name="author" id="author">
+          </p>
+          <p class="full">
+            <button type="button" id="searchAuthor">SEARCH BOOK BY AUTHOR</button>
+          </p>
+
+          <ul id="list" class="full">
+
+          </ul>         
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+  <script src="searchByAuthor.js"></script>
+</body>
+</html>
+
